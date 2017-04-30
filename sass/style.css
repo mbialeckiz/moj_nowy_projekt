@@ -1,0 +1,783 @@
+/* --- RESET --- */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic");
+/* line 3, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, d
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* --- GENERAL --- */
+/* line 29, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 33, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0; }
+
+/* line 38, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+p {
+  font-size: 1rem;
+  line-height: 1.68rem;
+  text-align: center;
+  color: #909090; }
+
+/* line 45, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* --- CONTAINER --- */
+/* line 56, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+/* line 62, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+section > .container {
+  margin: 50px auto; }
+
+/* --- CLEARFIX --- */
+/* line 69, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.row:before,
+.row:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 74, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.row:after {
+  clear: both; }
+
+/* --- GRID --- */
+/* line 80, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 10px; }
+
+/* For desktop: */
+/* line 88, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-1 {
+  width: 8.33%; }
+
+/* line 89, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-2 {
+  width: 16.66%; }
+
+/* line 90, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-3 {
+  width: 25%; }
+
+/* line 91, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-4 {
+  width: 33.33%; }
+
+/* line 92, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-5 {
+  width: 41.66%; }
+
+/* line 93, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-6 {
+  width: 50%; }
+
+/* line 94, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-7 {
+  width: 58.33%; }
+
+/* line 95, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-8 {
+  width: 66.66%; }
+
+/* line 96, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-9 {
+  width: 75%; }
+
+/* line 97, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-10 {
+  width: 83.33%; }
+
+/* line 98, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-11 {
+  width: 91.66%; }
+
+/* line 99, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-12 {
+  width: 100%; }
+
+/* line 101, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-0 {
+  margin-left: 0; }
+
+/* line 102, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-1 {
+  margin-left: 8.33%; }
+
+/* line 103, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-2 {
+  margin-left: 16.66%; }
+
+/* line 104, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-3 {
+  margin-left: 25%; }
+
+/* line 105, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-4 {
+  margin-left: 33.33%; }
+
+/* line 106, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-5 {
+  margin-left: 41.66%; }
+
+/* line 107, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-6 {
+  margin-left: 50%; }
+
+/* line 108, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-7 {
+  margin-left: 58.33%; }
+
+/* line 109, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-8 {
+  margin-left: 66.66%; }
+
+/* line 110, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-9 {
+  margin-left: 75%; }
+
+/* line 111, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-10 {
+  margin-left: 83.33%; }
+
+/* line 112, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.col-offset-11 {
+  margin-left: 91.66%; }
+
+/* --- NAV & HEADER --- */
+/* line 117, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.logo {
+  color: #fff;
+  line-height: 50px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 20px; }
+
+/* line 125, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #313234;
+  height: auto;
+  z-index: 999; }
+
+/* line 134, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+/* line 140, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+header > nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right; }
+
+/* line 147, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+header > nav > ul > li {
+  display: inline-block; }
+
+/* line 151, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+header > nav > ul > li > a {
+  display: block;
+  padding: 0 20px;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  line-height: 50px; }
+
+/* line 160, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+nav ul li:hover {
+  background-color: #807f7d; }
+
+/* line 164, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+nav ul li:hover a {
+  color: #00c7e8; }
+
+/* --- HERO --- */
+/* line 170, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.hero {
+  width: 100%;
+  height: 600px;
+  background: #fff url("https://static.pexels.com/photos/29106/pexels-photo-29106.jpg") 0/cover no-repeat; }
+
+/* line 176, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.slogan {
+  display: block;
+  height: 250px;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  float: right;
+  margin-top: 220px; }
+
+/* line 185, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.haslo {
+  color: #fff;
+  line-height: 50px;
+  font-size: 2.5rem;
+  text-align: left;
+  padding: 50px; }
+
+/* line 193, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+span {
+  font-weight: bold; }
+
+/* line 197, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.dots {
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+/* line 206, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+[class*="dot-"] {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-color: #807f7d;
+  border-radius: 50%; }
+
+/* line 214, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+[class*="dot-"]:hover {
+  background-color: #fff; }
+
+/* --- BENEFITS --- */
+/* line 220, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.benefits {
+  padding: 10px 0; }
+
+/* line 224, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.icon {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  background-color: #313332;
+  border-radius: 15px;
+  margin: 40px 0 20px 0; }
+
+/* line 233, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+[class*="bnf-"] {
+  /*max-width: 400px;*/
+  text-align: center;
+  position: relative; }
+
+/* line 239, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.benefits i.fa {
+  color: #fff;
+  font-size: 100px;
+  position: absolute;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 25px; }
+
+/* line 249, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+section.benefits h2 {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-transform: uppercase; }
+
+/* line 255, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+section.benefits
+[class*="bnf-"]:hover .icon {
+  background-color: #00c7e8; }
+
+/* line 261, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+[class*="bnf-"]:hover h2 {
+  color: #00c7e8; }
+
+/* --- FEATURED WORKS --- */
+/* line 267, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.featworks {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px; }
+
+/* line 273, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.featworks h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* --- GALLERY --- */
+/* line 283, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+section > div.gallery {
+  height: 504px;
+  width: 100%;
+  margin: 50px auto; }
+
+/* line 289, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.gallery img {
+  display: block;
+  height: 252px;
+  width: 100%;
+  object-fit: cover; }
+
+/* line 296, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.gallery [class*="col-"] {
+  padding: 0;
+  margin: 0; }
+
+/* line 302, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.layer i.fa {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  font-size: 20px;
+  padding: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  position: absolute; }
+
+/* line 317, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 252px;
+  width: 100%;
+  position: relative;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none; }
+
+/* line 329, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.layer .fa-link {
+  margin-top: 110px;
+  margin-left: 30%; }
+
+/* line 334, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.layer .fa-search {
+  margin-top: 110px;
+  margin-left: 60%; }
+
+/* line 339, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.gallery [class*="col-"] {
+  position: relative; }
+
+/* line 343, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.gallery [class*="col-"]:hover .layer {
+  display: block; }
+
+/* --- PEOPLE --- */
+/* line 350, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.people {
+  width: 100%;
+  max-width: 1400px;
+  margin: 70px auto; }
+
+/* line 356, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.people img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-sizing: content-box; }
+
+/* line 364, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.pic {
+  margin: 40px 20px; }
+
+/* line 368, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.people [class*="col-"] {
+  position: relative; }
+
+/* line 372, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.people h2 {
+  font-size: 1.5rem;
+  color: #313234;
+  text-align: center; }
+
+/* line 379, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.layer2 p {
+  font-size: 2rem;
+  line-height: 260px;
+  color: #fff;
+  text-align: center; }
+
+/* line 386, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.layer2 {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  display: none; }
+
+/* line 398, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.gallery [class*="col-"] {
+  position: relative; }
+
+/* line 402, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.people .pic:hover .layer2 {
+  display: block; }
+
+/* --- TABLET --- */
+/* line 409, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.adv {
+  height: 500px;
+  background-color: #797b7a;
+  position: relative;
+  width: 100%;
+  max-width: 1900px;
+  padding-top: 100px; }
+
+/* line 418, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.adv .row {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+/* line 423, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.tablet {
+  height: 450px;
+  width: 450px;
+  background-image: url("https://blog.placeit.net/wp-content/uploads/2015/09/default_3a21f8dfaa86c7491032649885ac0d48.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -50px;
+  bottom: 1px; }
+
+/* line 434, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.adv span {
+  font-style: italic;
+  font-weight: 100; }
+
+/* line 439, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.adv p {
+  display: inline-block;
+  padding: 10px 10px 10px 30px;
+  text-align: left;
+  color: #fff; }
+
+/* line 446, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.adv h1 {
+  color: #fff; }
+
+/* --- DIGITS --- */
+/* line 453, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.digits {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  text-align: center; }
+
+/* line 462, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.digits h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+/* line 469, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.digits span {
+  font-size: 1.2rem;
+  color: #00c7e8;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+/* --- FOOTER --- */
+/* line 479, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.footer {
+  height: 350px;
+  max-width: 1900px;
+  width: 100%;
+  background-color: #313332;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  font-weight: 100; }
+
+/* line 490, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.footer .row {
+  max-width: 1400px;
+  margin: 0 auto; }
+
+/* line 495, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.footer h1 {
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 5rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative; }
+
+/* line 506, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.footer p {
+  color: #fff;
+  text-align: left; }
+
+/* line 511, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.footer .col-3,
+.footer .col-9 {
+  color: #fff; }
+
+/* line 516, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.line {
+  width: 110px;
+  height: 3px;
+  background-color: #fff;
+  float: right;
+  display: inline-block;
+  margin-left: 15px; }
+
+/* line 525, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.3h1,
+.2h1,
+.1h1 {
+  display: inline-block;
+  position: relative; }
+
+/* line 532, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.line3,
+.line2,
+.line1 {
+  position: absolute;
+  top: 46px; }
+
+/* line 540, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.icon-btn {
+  height: 42px;
+  width: 42px;
+  color: #fff;
+  border: 0;
+  background-color: #00c7e8;
+  margin: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 42px;
+  transition: linear .3s; }
+
+/* line 555, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+.copy {
+  max-width: 1600px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  background-color: #2d2d2d;
+  color: #fff;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  margin: 0; }
+
+/* -- Media Queries --*/
+@media (max-width: 767px) {
+  /* For tablets: */
+  /* line 576, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-1 {
+    width: 8.33%; }
+  /* line 577, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-2 {
+    width: 16.66%; }
+  /* line 578, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-3 {
+    width: 25%; }
+  /* line 579, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-4 {
+    width: 33.33%; }
+  /* line 580, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-5 {
+    width: 41.66%; }
+  /* line 581, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-6 {
+    width: 50%; }
+  /* line 582, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-7 {
+    width: 58.33%; }
+  /* line 583, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-8 {
+    width: 66.66%; }
+  /* line 584, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-9 {
+    width: 75%; }
+  /* line 585, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-10 {
+    width: 83.33%; }
+  /* line 586, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-11 {
+    width: 91.66%; }
+  /* line 587, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-s-12 {
+    width: 100%; }
+  /* HEADER */
+  /* line 591, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  header nav ul {
+    float: none;
+    display: flex;
+    flex-wrap: wrap; }
+  /* line 597, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  nav ul li {
+    flex: 1 1 50%; }
+  /* line 601, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  header > nav > ul > li > a {
+    width: 100%; }
+  /* line 606, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .logo {
+    display: block;
+    text-align: center;
+    width: 100%; }
+  /* line 612, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  header {
+    height: 150px; }
+  /* line 616, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .slogan {
+    height: auto;
+    float: none;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  /* line 626, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .dots {
+    display: none; }
+  /* line 630, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .benefits {
+    padding: 0; }
+  /* line 636, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  [class*="bnf-"] {
+    margin: 0 auto; }
+  /* line 640, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .pic {
+    margin: 40px auto; }
+  /* line 644, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  [class*="bnf-"] {
+    width: 100%; }
+  /*FOOTER*/
+  /* line 649, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .footer {
+    height: auto; }
+  /* line 653, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .line {
+    display: none; }
+  /* line 658, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .footer row {
+    padding: 10%;
+    margin: 0 auto; }
+  /* line 663, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .adv {
+    height: auto;
+    padding-top: 30px; }
+  /* line 668, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .tablet {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    left: -50px;
+    bottom: 1px; }
+  /* line 676, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  /* line 682, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .layer2 {
+    left: 50%; } }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* For desktop: */
+  /* line 692, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-1 {
+    width: 8.33%; }
+  /* line 693, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-2 {
+    width: 16.66%; }
+  /* line 694, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-3 {
+    width: 25%; }
+  /* line 695, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-4 {
+    width: 33.33%; }
+  /* line 696, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-5 {
+    width: 41.66%; }
+  /* line 697, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-6 {
+    width: 50%; }
+  /* line 698, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-7 {
+    width: 58.33%; }
+  /* line 699, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-8 {
+    width: 66.66%; }
+  /* line 700, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-9 {
+    width: 75%; }
+  /* line 701, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-10 {
+    width: 83.33%; }
+  /* line 702, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-11 {
+    width: 91.66%; }
+  /* line 703, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .col-m-12 {
+    width: 100%; }
+  /* line 705, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .slogan {
+    height: auto; }
+  /* line 709, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .dots {
+    display: none; }
+  /* line 713, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .line {
+    display: none; }
+  /* line 717, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+  /* line 725, /Users/dianaimarcin/Desktop/Programowanie/Kodilla/Tydz3/zad3_3xyzbygg/sass/style.scss */
+  .layer2 {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
